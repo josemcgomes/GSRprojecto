@@ -1,0 +1,17 @@
+$TTL   60000
+@               IN      SOA     dnsroot.gsr.    root.dnsroot.gsr. (
+                        2006031201 ; serial
+                        28800 ; refresh
+                        14400 ; retry
+                        3600000 ; expire
+                        0 ; negative cache ttl
+                        )
+
+@              			 	    IN	NS	dnsroot.gsr.
+dnsroot     				      IN	A	10.0.0.22
+
+bomcliente.gsr.				    IN	NS	BCserver.bomcliente.gsr.
+BCserver.bomcliente.gsr.	IN 	A	10.0.0.2
+
+contatudo.gsr.            IN  NS  CTServidoresPublicosDNS1.contatudo.gsr.
+CTServidoresPublicosDNS1.contatudo.gsr. IN NS 10.0.0.130

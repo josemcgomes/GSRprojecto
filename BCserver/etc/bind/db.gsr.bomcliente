@@ -1,0 +1,16 @@
+$TTL    60000
+@               IN      SOA     BCserver.bomcliente.gsr. root.BCserver.bomcliente.gsr. (
+                        2006031201 ; serial
+                        28 ; refresh
+                        14 ; retry
+                        3600000 ; expire
+                        0 ; negative cache ttl
+                        )
+@                IN      NS      BCserver.bomcliente.gsr.
+BCserver	       IN      A       10.0.0.2
+BCpc		         IN		   A		   10.0.0.5
+www.bomcliente.gsr  IN   A       10.0.0.2
+
+
+imap		IN	A	10.0.0.2
+mail		IN 	A 	10.0.0.2
