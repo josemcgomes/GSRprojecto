@@ -9,4 +9,4 @@ echo contalis:boa | chpasswd
 adduser --disabled-password --gecos "" contapor
 echo contapor:to | chpasswd
 
-/etc/init.d/proftp start
+/etc/init.d/proftpd start

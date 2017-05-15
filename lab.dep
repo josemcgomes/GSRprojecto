@@ -1,15 +1,15 @@
-escritorio1_posto1: escritorio1 escritorio1_switch
-escritorio1_posto2: escritorio1_posto1
-escritorio1_visit1: escritorio1 
-escritorio1_visit2: escritorio1_visit1
+escritorio1posto1: escritorio1 escritorio1switch
+escritorio1posto2: escritorio1posto1
+escritorio1visit1: escritorio1
+escritorio1visit2: escritorio1visit1
 
-escritorio2_posto1: escritorio2 escritorio2_switch
-escritorio2_posto2: escritorio2_posto1
-escritorio2_visit1: escritorio2 
-escritorio2_visit2: escritorio2_visit1
+escritorio2posto1: escritorio2 escritorio2switch
+escritorio2posto2: escritorio2posto1
+escritorio2visit1: escritorio2
+escritorio2visit2: escritorio2visit1
 
-sede_admin_switch: CTsedeRouter
+SedeAdminSwitch: CTsedeRouter
 
-RH: sede_admin_switch
+RH: SedeAdminSwitch
 contabilista: RH
 diretor: contabilista
