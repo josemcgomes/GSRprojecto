@@ -16,5 +16,5 @@ BCserver.bomcliente.gsr.	IN 	A	10.0.0.2
 contatudo.gsr.            IN  NS  CTServidoresPublicosDNS1.contatudo.gsr.
 contatudo.gsr.            IN  NS  CTServidoresPublicosDNS2.contatudo.gsr.
 
-CTServidoresPublicosDNS1.contatudo.gsr. IN NS 10.0.0.130
-CTServidoresPublicosDNS2.contatudo.gsr. IN NS 10.0.0.131
+CTServidoresPublicosDNS1.contatudo.gsr. IN A 10.0.0.130
+CTServidoresPublicosDNS2.contatudo.gsr. IN A 10.0.0.131
