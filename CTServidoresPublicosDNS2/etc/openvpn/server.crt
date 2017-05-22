@@ -1,0 +1,73 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1 (0x1)
+        Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=PT, ST=LX, L=Lisboa, O=Contatudo, CN=Contatudo CA/emailAddress=geral@contatudo.gsr
+        Validity
+            Not Before: May 22 17:25:54 2017 GMT
+            Not After : May 20 17:25:54 2027 GMT
+        Subject: C=PT, ST=LX, L=Lisboa, O=Contatudo, CN=server/emailAddress=geral@contatudo.gsr
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (1024 bit)
+                Modulus (1024 bit):
+                    00:cd:54:dc:77:9d:e0:f4:84:a4:92:b1:1c:3a:fa:
+                    f1:64:53:71:61:dd:ff:ec:28:a9:4d:bb:a6:3d:7b:
+                    d0:f3:dc:6e:26:6e:5f:3c:e1:aa:96:89:d3:e8:49:
+                    8b:22:74:85:61:1f:7c:c2:bd:25:b2:0b:b0:7a:c1:
+                    a2:2b:c5:fc:e7:4b:ac:03:e2:a3:a2:1b:f6:ce:a9:
+                    71:16:12:c7:46:ba:31:6c:81:db:39:0c:bc:6e:b4:
+                    9e:db:11:73:4b:f2:72:fb:df:a9:9c:5b:b0:e8:f0:
+                    9b:24:44:f6:ed:c2:0d:52:aa:21:3a:40:7d:04:7d:
+                    d3:5e:f4:7f:c3:7d:71:2e:31
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Cert Type: 
+                SSL Server
+            Netscape Comment: 
+                Easy-RSA Generated Server Certificate
+            X509v3 Subject Key Identifier: 
+                E6:F9:27:1F:E1:E3:C4:15:9C:A6:72:8E:8D:9F:9E:D8:08:19:B7:E8
+            X509v3 Authority Key Identifier: 
+                keyid:55:01:B2:3C:80:4A:1B:86:DD:6A:E5:3F:82:28:AE:17:2E:68:E0:99
+                DirName:/C=PT/ST=LX/L=Lisboa/O=Contatudo/CN=Contatudo CA/emailAddress=geral@contatudo.gsr
+                serial:E5:03:C5:3F:13:FC:AC:5F
+
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment
+    Signature Algorithm: sha1WithRSAEncryption
+        36:39:82:13:e8:49:a3:5c:aa:34:cd:a4:92:3b:88:6b:2e:08:
+        ed:14:e3:27:bd:f8:73:1e:38:c8:d2:a9:ef:33:2b:93:0a:b2:
+        e8:17:ff:b9:ab:15:65:25:27:42:d7:c6:9d:c8:77:32:c8:08:
+        21:d0:e3:9c:ad:d4:48:c8:23:7d:e8:57:87:f4:5b:3a:e9:50:
+        c8:76:2f:fd:67:98:9b:9d:ad:31:56:db:e0:6a:5d:44:98:6d:
+        6e:a3:4b:f9:e7:0b:98:2a:21:ae:73:96:07:a2:58:97:ea:c7:
+        94:f5:97:34:08:cd:cf:aa:e2:7e:11:b9:77:b7:24:c7:e5:41:
+        00:e9
+-----BEGIN CERTIFICATE-----
+MIIDrjCCAxegAwIBAgIBATANBgkqhkiG9w0BAQUFADB6MQswCQYDVQQGEwJQVDEL
+MAkGA1UECBMCTFgxDzANBgNVBAcTBkxpc2JvYTESMBAGA1UEChMJQ29udGF0dWRv
+MRUwEwYDVQQDEwxDb250YXR1ZG8gQ0ExIjAgBgkqhkiG9w0BCQEWE2dlcmFsQGNv
+bnRhdHVkby5nc3IwHhcNMTcwNTIyMTcyNTU0WhcNMjcwNTIwMTcyNTU0WjB0MQsw
+CQYDVQQGEwJQVDELMAkGA1UECBMCTFgxDzANBgNVBAcTBkxpc2JvYTESMBAGA1UE
+ChMJQ29udGF0dWRvMQ8wDQYDVQQDEwZzZXJ2ZXIxIjAgBgkqhkiG9w0BCQEWE2dl
+cmFsQGNvbnRhdHVkby5nc3IwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAM1U
+3Hed4PSEpJKxHDr68WRTcWHd/+woqU27pj170PPcbiZuXzzhqpaJ0+hJiyJ0hWEf
+fMK9JbILsHrBoivF/OdLrAPio6Ib9s6pcRYSx0a6MWyB2zkMvG60ntsRc0vycvvf
+qZxbsOjwmyRE9u3CDVKqITpAfQR90170f8N9cS4xAgMBAAGjggFIMIIBRDAJBgNV
+HRMEAjAAMBEGCWCGSAGG+EIBAQQEAwIGQDA0BglghkgBhvhCAQ0EJxYlRWFzeS1S
+U0EgR2VuZXJhdGVkIFNlcnZlciBDZXJ0aWZpY2F0ZTAdBgNVHQ4EFgQU5vknH+Hj
+xBWcpnKOjZ+e2AgZt+gwgawGA1UdIwSBpDCBoYAUVQGyPIBKG4bdauU/giiuFy5o
+4JmhfqR8MHoxCzAJBgNVBAYTAlBUMQswCQYDVQQIEwJMWDEPMA0GA1UEBxMGTGlz
+Ym9hMRIwEAYDVQQKEwlDb250YXR1ZG8xFTATBgNVBAMTDENvbnRhdHVkbyBDQTEi
+MCAGCSqGSIb3DQEJARYTZ2VyYWxAY29udGF0dWRvLmdzcoIJAOUDxT8T/KxfMBMG
+A1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIFoDANBgkqhkiG9w0BAQUFAAOB
+gQA2OYIT6EmjXKo0zaSSO4hrLgjtFOMnvfhzHjjI0qnvMyuTCrLoF/+5qxVlJSdC
+18adyHcyyAgh0OOcrdRIyCN96FeH9Fs66VDIdi/9Z5ibna0xVtvgal1EmG1uo0v5
+5wuYKiGuc5YHoliX6seU9Zc0CM3PquJ+Ebl3tyTH5UEA6Q==
+-----END CERTIFICATE-----
