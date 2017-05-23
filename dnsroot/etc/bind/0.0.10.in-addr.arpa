@@ -1,0 +1,81 @@
+;@  IN  SOA ns1.yournameserver.com. root.domain.com.(
+
+
+$TTL    60000
+$ORIGIN 0.0.10.in-addr.arpa.
+@               IN      SOA     dnsroot.gsr.    root.dnsroot.gsr.(
+2007040301      ;serial
+14400                 ;refresh
+3600                   ;retry
+604800              ;expire
+10800                ;minimum
+)
+
+128/26	NS	CTServidoresPublicosDNS1.contatudo.gsr.
+128/26	NS	CTServidoresPublicosDNS2.contatudo.gsr.
+
+
+130	CNAME	130.128/26
+131	CNAME	131.128/26
+132	CNAME	132.128/26
+
+178	CNAME	178.128/26
+179	CNAME	179.128/26
+180	CNAME	180.128/26
+
+144	CNAME	144.128/26
+145	CNAME	145.128/26
+146	CNAME	146.128/26
+147	CNAME	147.128/26
+148	CNAME	148.128/26
+149	CNAME	149.128/26
+150	CNAME	150.128/26
+151	CNAME	151.128/26
+152	CNAME	152.128/26
+153	CNAME	153.128/26
+
+161	CNAME	161.128/26
+162	CNAME	162.128/26
+163	CNAME	163.128/26
+164	CNAME	164.128/26
+165	CNAME	165.128/26
+166	CNAME	166.128/26
+167	CNAME	167.128/26
+168	CNAME	168.128/26
+169	CNAME	169.128/26
+170	CNAME	170.128/26
+
+
+$ORIGIN 128/26.0.0.10.in-addr.arpa.
+
+@ IN  SOA CTServidoresPublicosDNS1.contatudo.gsr. root.CTServidoresPublicosDNS1.contatudo.gsr.
+
+130 IN  PTR CTServidoresPublicosDNS1.contatudo.gsr.
+131 IN  PTR CTServidoresPublicosDNS2.contatudo.gsr.
+132 IN  PTR CTServidoresPublicosProxy.contatudo.gsr.
+
+178 IN  PTR RH.contatudo.gsr.
+179 IN  PTR contabilista.contatudo.gsr.
+180 IN  PTR director.contatudo.gsr.
+
+144 IN  PTR escritorio1visit1.contatudo.gsr.
+145 IN  PTR escritorio1visit2.contatudo.gsr.
+146 IN  PTR escritorio1visit3.contatudo.gsr.
+147 IN  PTR escritorio1visit4.contatudo.gsr.
+148 IN  PTR escritorio1visit5.contatudo.gsr.
+149 IN  PTR escritorio1visit6.contatudo.gsr.
+150 IN  PTR escritorio1visit7.contatudo.gsr.
+151 IN  PTR escritorio1visit8.contatudo.gsr.
+152 IN  PTR escritorio1visit9.contatudo.gsr.
+153 IN  PTR escritorio1visit10.contatudo.gsr.
+
+161 IN  PTR escritorio2visit1.contatudo.gsr.
+162 IN  PTR escritorio2visit2.contatudo.gsr.
+163 IN  PTR escritorio2visit3.contatudo.gsr.
+164 IN  PTR escritorio2visit4.contatudo.gsr.
+165 IN  PTR escritorio2visit5.contatudo.gsr.
+166 IN  PTR escritorio2visit6.contatudo.gsr.
+167 IN  PTR escritorio2visit7.contatudo.gsr.
+168 IN  PTR escritorio2visit8.contatudo.gsr.
+169 IN  PTR escritorio2visit9.contatudo.gsr.
+170 IN  PTR escritorio2visit10.contatudo.gsr.

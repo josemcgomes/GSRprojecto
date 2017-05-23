@@ -1,0 +1,30 @@
+;@  IN  SOA ns1.yournameserver.com. root.domain.com.(
+
+
+$TTL    60000
+$ORIGIN 2.0.10.in-addr.arpa.
+@               IN      SOA     dnsroot.gsr.    root.dnsroot.gsr.(
+2007040301      ;serial
+14400                 ;refresh
+3600                   ;retry
+604800              ;expire
+10800                ;minimum
+)
+
+128/26.0.0.10.in-addr.arpa.	NS	CTServidoresPublicosDNS1.contatudo.gsr.
+128/26.0.0.10.in-addr.arpa.	NS	CTServidoresPublicosDNS2.contatudo.gsr.
+
+
+escritorio1   IN  A 10.0.2.65
+escritorio2   IN  A 10.0.2.69
+
+65	CNAME	65.64/26
+69	CNAME	69.64/26
+
+
+$ORIGIN 64/26.2.0.10.in-addr.arpa.
+
+@ IN  SOA CTServidoresPublicosDNS1.contatudo.gsr. root.CTServidoresPublicosDNS1.contatudo.gsr.
+
+65  IN  PTR escritorio1.contatudo.gsr.
+69  IN  PTR escritorio2.contatudo.gsr.
