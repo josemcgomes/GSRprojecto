@@ -1,0 +1,16 @@
+$TTL 1D
+@               IN      SOA     dnsroot.gsr.    root.dnsroot.gsr. (
+                                2016032400      ; Serial
+                                3H              ; Refresh 3 hours
+                                1H              ; Retry 1 hour
+                                3W              ; Expire 3 weeks
+                                1D              ; Minimum 1 day
+                                )
+;
+                        IN      NS      dnsroot.gsr.
+
+$ORIGIN 0.0.10.in-addr.arpa.
+$ORIGIN 128-191.0.0.10.in-addr.arpa.
+128-191                   NS      CTServidoresPublicosDNS1.contatudo.gsr.
+128-191                   NS      CTServidoresPublicosDNS2.contatudo.gsr.
+$GENERATE 128-191 $.0.0.10.in-addr.arpa. CNAME $.128-191.0.0.10.in-addr.arpa.

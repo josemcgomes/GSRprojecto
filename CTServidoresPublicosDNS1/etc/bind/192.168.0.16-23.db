@@ -1,0 +1,14 @@
+$TTL 1D
+@               IN      SOA     CTServidoresPublicosDNS1.contatudo.gsr. root.CTServidoresPublicosDNS1.contatudo.gsr. (
+                                2016032419      ; Serial
+                                3H              ; Refresh 3 hours
+                                1H              ; Retry 1 hour
+                                3W              ; Expire 3 weeks
+                                1D              ; Minimum 1 day
+                                )
+;
+                        IN      NS      CTServidoresPublicosDNS1.contatudo.gsr.
+                        IN      NS      CTServidoresPublicosDNS2.contatudo.gsr.
+$ORIGIN 16-23.0.168.192.in-addr.arpa.
+17              PTR     escritorio2posto1.contatudo.gsr.
+18              PTR     escritorio2posto2.contatudo.gsr.
