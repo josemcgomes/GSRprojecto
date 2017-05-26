@@ -1,2 +1,3 @@
 ip route add default via 10.0.0.177/28
+a2enmod ssl
 /etc/init.d/networking restart
