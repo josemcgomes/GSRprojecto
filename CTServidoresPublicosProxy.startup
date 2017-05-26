@@ -7,4 +7,3 @@ chmod a-w /etc/squid/squid.conf
 
 a2enmod userdir
 
-dpkg -i /hostlab/sudo_1.6.9p17-3_i386.deb
