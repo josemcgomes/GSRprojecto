@@ -2,3 +2,9 @@ ip addr add dev eth0 10.0.0.132/28
 ip link set dev eth0 up
 
 ip route add default via 10.0.0.129
+/etc/init.d/squid start
+chmod a-w /etc/squid/squid.conf
+
+a2enmod userdir
+
+dpkg -i /hostlab/sudo_1.6.9p17-3_i386.deb
