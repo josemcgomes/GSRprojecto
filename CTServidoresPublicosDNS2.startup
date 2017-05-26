@@ -4,11 +4,23 @@ ip link set dev eth0 up
 ip route add default via 10.0.0.129
 
 /etc/init.d/bind start
-
 /etc/init.d/apache2 start
+
 a2enmod rewrite
 a2enmod userdir
-a2ensite default.conf
+a2enmod ssl
+a2enmod headers
+
+a2ensite default-ssl.conf
+a2enconf ssl-params
+
+adduser --disabled-password --gecos "" admin
+chown -R admin:admin /var/admin
+chmod -R 700 /var/admin
+
+# palavra pass simples ("ps") para testes em todas as contas, alterar mais tarde
+echo admin:ps |chpasswd
+
 /etc/init.d/apache2 restart
 
 

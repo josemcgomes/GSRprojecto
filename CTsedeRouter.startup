@@ -27,17 +27,50 @@ ip route add 200.200.200.0/24 via 10.0.0.131
 #####proxy configuration
 /etc/init.d/snmpd start
 
-#vpn
+
+#############Firewall
+#Ip privados  da contatudo sem acesso a internet
+iptables -A FORWARD -s 192.168.0.8/29 o- eth0 -j DROP
+iptables -A FORWARD -s 192.168.0.16/29 o- eth0 -j DROP
+iptables -A FORWARD -s 192.168.0.24/29 o- eth0 -j DROP
+
+#Bloquear acesso do exterior a uma maquina com IP privado
+iptables -A FORWARD -i eth0 -d 192.168.0.0/29 -j DROP
+iptables -A FORWARD -i eth0 -d 192.168.0.16/29 -j DROP
+iptables -A FORWARD -i eth0 -d 192.168.0.24/29 -j DROP
+
+#bloquear acesso do exterior a uma maquina com o IP publico
+#com excecao dos visitantes
+
+iptables -A FORWARD -i eth0 -d 10.0.2.64/28 -j DROP
+
+#Bloquear acesso do exterior a um servidor publico quando
+# nao utilzam servicos que estes disponibilizam
+
 iptables -A FORWARD -i eth0 -d 10.0.0.128/28 -p tcp --match multiport --dports 80,443,25,143,53,22 -j ACCEPT
 iptables -A FORWARD -i eth0 -d 10.0.0.128/28 -p udp --match multiport --dports 25,143,53,22,1194 -j ACCEPT
 
-#bloquear acessos ao serv http para ir p o proxy
+iptables -A FORWARD -i eth0 -d 10.0.0.128/28 -j DROP
 
-iptables -A FORWARD -s 10.0.2.64/26 -d 10.0.0.131 -p tcp --dport 80 -j DROP
-iptables -A FORWARD -s 10.0.0.128/26 -d 10.0.0.131 -p tcp --dport 80 -j DROP
-iptables -A FORWARD -s 10.0.0.132 -d 10.0.0.131 -p tcp --dport 80 -j ACCEPT
+#nao pode ser possivel utilizar o proxy a partir do exterior
+iptables -A FORWARD -i eth0 -d 10.0.0.132 -j DROP
+
+###Ataque spoofing#######
+
+iptables -A INPUT -s 10.0.2.64/26 -i eth0 -j DROP
+iptables -A INPUT -s 10.0.0.128/26 -i eth0 -j DROP
+iptables -A INPUT -s 192.168.0.0/24 -i eth0 -j DROP
+
+
 
 #redirect to proxy
-iptables -t nat -A PREROUTING -s 10.0.0.160/28 -p tcp --dport 80 -j DNAT --to-destination 10.0.0.132:3128
-iptables -t nat -A PREROUTING -s 10.0.0.144/28 -p tcp --dport 80 -j DNAT --to-destination 10.0.0.132:3128
-iptables -t nat -A PREROUTING -s 10.0.0.128/30 -p tcp --dport 80 -j DNAT --to-destination 10.0.0.132:3128
+
+iptables -t nat -A PREROUTING -s 10.0.0.160/28 -p tcp --dport 80 -j DNAT --to 10.0.0.132:3128
+iptables -t nat -A PREROUTING -s 10.0.0.144/28 -p tcp --dport 80 -j DNAT --to 10.0.0.132:3128
+
+#bloquear acessos ao serv http para ir p o proxy
+iptables -A FORWARD -s 10.0.2.64/26 -d 10.0.0.131 -p tcp --dport 80 -j DROP
+iptables -A FORWARD -s 10.0.0.176/28 -d 10.0.0.131 -p tcp --dport 80 -j DROP
+
+chmod +x /etc/init.d/firewall
+/etc/init.d/firewall start
