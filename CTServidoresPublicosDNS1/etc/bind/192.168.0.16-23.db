@@ -10,5 +10,6 @@ $TTL 1D
                         IN      NS      CTServidoresPublicosDNS1.contatudo.gsr.
                         IN      NS      CTServidoresPublicosDNS2.contatudo.gsr.
 $ORIGIN 16-23.0.168.192.in-addr.arpa.
-17              PTR     escritorio2posto1.contatudo.gsr.
-18              PTR     escritorio2posto2.contatudo.gsr.
+17              PTR     escritorio2.contatudo.gsr.
+18              PTR     escritorio2posto1.contatudo.gsr.
+19              PTR     escritorio2posto2.contatudo.gsr.

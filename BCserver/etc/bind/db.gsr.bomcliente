@@ -7,8 +7,10 @@ $TTL    60000
                         0 ; negative cache ttl
                         )
 @                IN      NS      BCserver.bomcliente.gsr.
+BCrouter         IN      A       10.0.0.1
 BCserver	       IN      A       10.0.0.2
 BCpc		         IN		   A		   10.0.0.5
+BCrouter         IN      A       10.0.0.6
 www  IN   A       10.0.0.2
 
 

@@ -11,4 +11,7 @@ $TTL 1D
                         IN      NS      CTServidoresPublicosDNS2.contatudo.gsr.
 $ORIGIN 64-127.2.0.10.in-addr.arpa.
 65              PTR     escritorio1.contatudo.gsr.
+66              PTR     CTsedeRouter.contatudo.gsr.
+
+68              PTR     CTsedeRouter.contatudo.gsr.
 69              PTR     escritorio2.contatudo.gsr.
