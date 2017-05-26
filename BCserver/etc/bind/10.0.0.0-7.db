@@ -9,5 +9,7 @@ $TTL 1D
 ;
                         IN      NS      BCserver.bomcliente.gsr.
 $ORIGIN 0-7.0.0.10.in-addr.arpa.
+1   PTR   BCrouter.bomcliente.gsr.
 2   PTR   BCpc.bomcliente.gsr.
 5   PTR   BCserver.bomcliente.gsr.
+6   PTR   BCrouter.bomcliente.gsr.

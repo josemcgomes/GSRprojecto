@@ -33,30 +33,33 @@ RH                IN      A       10.0.0.178
 contabilista      IN      A       10.0.0.179
 diretor           IN      A       10.0.0.180
 
-escritorio1posto1                 IN      A      192.168.0.25
-escritorio1posto2                 IN      A      192.168.0.26
+escritorio1                       IN      A     10.0.2.65
+escritorio2                       IN      A     10.0.2.69
 
-escritorio1visit1                 IN      A        10.0.0.144
-escritorio1visit2                 IN      A        10.0.0.145
-escritorio1visit3                 IN      A        10.0.0.146
-escritorio1visit4                 IN      A        10.0.0.147
-escritorio1visit5                 IN      A        10.0.0.148
-escritorio1visit6                 IN      A        10.0.0.149
-escritorio1visit7                 IN      A        10.0.0.150
-escritorio1visit8                 IN      A        10.0.0.151
-escritorio1visit9                 IN      A        10.0.0.152
-escritorio1visit10                IN      A        10.0.0.153
+escritorio1posto1                 IN      A      192.168.0.26
+escritorio1posto2                 IN      A      192.168.0.27
 
-escritorio2visit1                 IN      A        10.0.0.161
-escritorio2visit2                 IN      A        10.0.0.162
-escritorio2visit3                 IN      A        10.0.0.163
-escritorio2visit4                 IN      A        10.0.0.164
-escritorio2visit5                 IN      A        10.0.0.165
-escritorio2visit6                 IN      A        10.0.0.166
-escritorio2visit7                 IN      A        10.0.0.167
-escritorio2visit8                 IN      A        10.0.0.168
-escritorio2visit9                 IN      A        10.0.0.169
-escritorio2visit10                IN      A        10.0.0.170
+escritorio1visit1                 IN      A        10.0.0.146
+escritorio1visit2                 IN      A        10.0.0.147
+escritorio1visit3                 IN      A        10.0.0.148
+escritorio1visit4                 IN      A        10.0.0.149
+escritorio1visit5                 IN      A        10.0.0.150
+escritorio1visit6                 IN      A        10.0.0.151
+escritorio1visit7                 IN      A        10.0.0.152
+escritorio1visit8                 IN      A        10.0.0.153
+escritorio1visit9                 IN      A        10.0.0.154
+escritorio1visit10                IN      A        10.0.0.155
 
-escritorio2posto1                 IN      A        192.168.0.17
-escritorio2posto2                 IN      A        192.168.0.18
+escritorio2visit1                 IN      A        10.0.0.162
+escritorio2visit2                 IN      A        10.0.0.163
+escritorio2visit3                 IN      A        10.0.0.164
+escritorio2visit4                 IN      A        10.0.0.165
+escritorio2visit5                 IN      A        10.0.0.166
+escritorio2visit6                 IN      A        10.0.0.167
+escritorio2visit7                 IN      A        10.0.0.168
+escritorio2visit8                 IN      A        10.0.0.169
+escritorio2visit9                 IN      A        10.0.0.170
+escritorio2visit10                IN      A        10.0.0.171
+
+escritorio2posto1                 IN      A        192.168.0.18
+escritorio2posto2                 IN      A        192.168.0.19

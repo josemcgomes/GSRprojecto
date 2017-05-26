@@ -10,5 +10,6 @@ $TTL 1D
                         IN      NS      CTServidoresPublicosDNS1.contatudo.gsr.
                         IN      NS      CTServidoresPublicosDNS2.contatudo.gsr.
 $ORIGIN 8-15.0.168.192.in-addr.arpa.
+9               PTR     CTsedeRouter.contatudo.gsr.
 10              PTR     CTServidoresPrivadosFicheiro.contatudo.gsr.
 11              PTR     CTServidoresPrivadosMonitoriza.contatudo.gsr.
