@@ -35,7 +35,7 @@ iptables -A FORWARD -s 192.168.0.16/29 o- eth0 -j DROP
 iptables -A FORWARD -s 192.168.0.24/29 o- eth0 -j DROP
 
 #Bloquear acesso do exterior a uma maquina com IP privado
-iptables -A FORWARD -i eth0 -d 192.168.0.0/29 -j DROP
+iptables -A FORWARD -i eth0 -d 192.168.0.8/29 -j DROP
 iptables -A FORWARD -i eth0 -d 192.168.0.16/29 -j DROP
 iptables -A FORWARD -i eth0 -d 192.168.0.24/29 -j DROP
 
@@ -43,6 +43,7 @@ iptables -A FORWARD -i eth0 -d 192.168.0.24/29 -j DROP
 #com excecao dos visitantes
 
 iptables -A FORWARD -i eth0 -d 10.0.2.64/28 -j DROP
+iptables -A FORWARD -i eth0 -d 10.0.0.176/28 -j DROP
 
 #Bloquear acesso do exterior a um servidor publico quando
 # nao utilzam servicos que estes disponibilizam
