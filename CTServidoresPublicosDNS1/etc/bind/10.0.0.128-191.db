@@ -1,0 +1,42 @@
+$TTL 1D
+@               IN      SOA     CTServidoresPublicosDNS1.contatudo.gsr. root.CTServidoresPublicosDNS1.contatudo.gsr. (
+                                2016032419      ; Serial
+                                3H              ; Refresh 3 hours
+                                1H              ; Retry 1 hour
+                                3W              ; Expire 3 weeks
+                                1D              ; Minimum 1 day
+                                )
+;
+                        IN      NS      CTServidoresPublicosDNS1.contatudo.gsr.
+                        IN      NS      CTServidoresPublicosDNS2.contatudo.gsr.
+$ORIGIN 128-191.0.0.10.in-addr.arpa.
+
+130              PTR     CTServidoresPublicosDNS1.contatudo.gsr.
+131              PTR     CTServidoresPublicosDNS2.contatudo.gsr.
+132              PTR     CTServidoresPublicosProxy.contatudo.gsr.
+
+144              PTR     escritorio1visit1.contatudo.gsr.
+145              PTR     escritorio1visit2.contatudo.gsr.
+146              PTR     escritorio1visit3.contatudo.gsr.
+147              PTR     escritorio1visit4.contatudo.gsr.
+148              PTR     escritorio1visit5.contatudo.gsr.
+149              PTR     escritorio1visit6.contatudo.gsr.
+150              PTR     escritorio1visit7.contatudo.gsr.
+151              PTR     escritorio1visit8.contatudo.gsr.
+152              PTR     escritorio1visit9.contatudo.gsr.
+153              PTR     escritorio1visit10.contatudo.gsr.
+
+161              PTR     escritorio2visit1.contatudo.gsr.
+162              PTR     escritorio2visit2.contatudo.gsr.
+163              PTR     escritorio2visit3.contatudo.gsr.
+164              PTR     escritorio2visit4.contatudo.gsr.
+165              PTR     escritorio2visit5.contatudo.gsr.
+166              PTR     escritorio2visit6.contatudo.gsr.
+167              PTR     escritorio2visit7.contatudo.gsr.
+168              PTR     escritorio2visit8.contatudo.gsr.
+169              PTR     escritorio2visit9.contatudo.gsr.
+170              PTR     escritorio2visit10.contatudo.gsr.
+
+178              PTR     RH.contatudo.gsr.
+179              PTR     contabilista.contatudo.gsr.
+180              PTR     diretor.contatudo.gsr.
