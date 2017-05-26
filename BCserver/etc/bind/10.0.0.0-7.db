@@ -1,0 +1,13 @@
+$TTL 1D
+@               IN      SOA     BCserver.bomcliente.gsr. root.BCserver.bomcliente.gsr. (
+                                2016032419      ; Serial
+                                3H              ; Refresh 3 hours
+                                1H              ; Retry 1 hour
+                                3W              ; Expire 3 weeks
+                                1D              ; Minimum 1 day
+                                )
+;
+                        IN      NS      BCserver.bomcliente.gsr.
+$ORIGIN 0-7.0.0.10.in-addr.arpa.
+2   PTR   BCpc.bomcliente.gsr.
+5   PTR   BCserver.bomcliente.gsr.

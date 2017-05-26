@@ -10,3 +10,6 @@ a2enmod rewrite
 a2enmod userdir
 a2ensite default.conf
 /etc/init.d/apache2 restart
+
+
+iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -o eth0 -j MASQUERADE
