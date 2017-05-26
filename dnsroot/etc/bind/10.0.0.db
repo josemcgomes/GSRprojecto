@@ -18,3 +18,8 @@ $GENERATE 128-191 $.0.0.10.in-addr.arpa. CNAME $.128-191.0.0.10.in-addr.arpa.
 $ORIGIN 0-7.0.0.10.in-addr.arpa.
 0-7                       NS      BCserver.contatudo.gsr.
 $GENERATE 0-7 $.0.0.10.in-addr.arpa. CNAME $.0-7.0.0.10.in-addr.arpa.
+
+
+$ORIGIN 16-31.0.0.10.in-addr.arpa.
+16-31 NS  dnsroot.gsr.
+$GENERATE 16-31 $.0.0.10.in-addr.arpa. CNAME $.16-31.0.0.10.in-addr.arpa.

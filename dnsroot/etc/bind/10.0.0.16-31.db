@@ -1,0 +1,24 @@
+$TTL   60000
+@               IN      SOA     dnsroot.gsr.    root.dnsroot.gsr. (
+                        2006031201 ; serial
+                        28800 ; refresh
+                        14400 ; retry
+                        3600000 ; expire
+                        0 ; negative cache ttl
+                        )
+
+              			 	    IN	NS	dnsroot.gsr.
+
+$ORIGIN 16-31.0.0.10.in-addr.arpa.
+
+17  IN  PTR ISProuter.gsr.
+18  IN  PTR BCrouter.bomcliente.gsr.
+
+21  IN  PTR ISProuter.gsr.
+22  IN  PTR dnsroot.gsr.
+
+25  IN  PTR ISProuter.gsr.
+26  IN  PTR CTsedeRouter.gsr.
+
+29  IN  PTR ISProuter.gsr.
+30  IN  PTR admin.gsr.
